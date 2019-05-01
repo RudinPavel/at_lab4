@@ -23,7 +23,7 @@ public class MyArrayList<T> implements Iterable<T> {
     }
 
     @Override
-    public Iterator<T> iterator() {
+    public Iterator<T> iterator(){
         return new Iterator<T>() {
 
             private int currentIndex = 0;
@@ -36,6 +36,11 @@ public class MyArrayList<T> implements Iterable<T> {
             @Override
             public T next() {
                 return (T) values[currentIndex++];
+            }
+
+            @Override
+            public void remove(){
+                throw new UnsupportedOperationException("remove");
             }
         };
     }

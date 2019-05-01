@@ -23,7 +23,7 @@ public class Main {
         }
     }
 
-    public static void myListIterator() throws Exception{
+    public static void myListIterator(){ //throws Exception{
 
         MyArrayList myArrayList = new MyArrayList();
 
@@ -39,6 +39,8 @@ public class Main {
         Iterator myIterator = myArrayList.iterator();
         while (myIterator.hasNext())
             System.out.println(myIterator.next());
+
+        myIterator.remove();
     }
 
     public static void javaListIterator() throws NoSuchElementException {
