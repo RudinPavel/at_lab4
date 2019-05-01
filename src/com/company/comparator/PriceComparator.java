@@ -1,4 +1,6 @@
-package com.company;
+package com.company.comparator;
+
+import com.company.comparator.Dog;
 
 import java.util.Comparator;
 

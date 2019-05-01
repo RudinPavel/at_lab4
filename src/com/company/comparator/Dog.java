@@ -1,4 +1,4 @@
-package com.company;
+package com.company.comparator;
 
 public class Dog implements Comparable<Dog> {
 
